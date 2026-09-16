@@ -2,10 +2,10 @@ seed: 17
 
 paths:
   train_root: /opt/data/private/lh/Datasets/AIGIBench/train
-  val_root: /opt/data/private/lh/Datasets/AIGIBench/test
+  val_root: /opt/data/private/lh/Datasets/AIGIBench/val
   test_root: /opt/data/private/lh/Datasets/AIGIBench/test
   backbone_checkpoint: /opt/data/private/lh/models/vit_large_patch16_dinov3/model.safetensors
-  trained_checkpoint: /opt/data/private/lh/aa_lora/85.56.pth
+  trained_checkpoint: /opt/data/private/lh/aa_lora/best.pth
   output_dir: outputs
 
 model:
@@ -27,8 +27,6 @@ input:
   sdv_quality: 90
   jpeg_domains:
     - sdv1.4
-    - "1.4"
-    - sd15
   image_extensions:
     - .jpg
     - .jpeg
